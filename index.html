@@ -3,92 +3,109 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Gresya Yulianti — Tubuhmu adalah Kartu Namamu</title>
-<meta name="description" content="Personal branding: Tubuhmu adalah Kartu Namamu. Bergabunglah dalam perjalanan hidup sehat, percaya diri, dan berenergi." />
+<title>gresyayuliati — Dunia menilaimu sebelum kamu berbicara</title>
+<meta name="description" content="Personal branding by Gresya Yulianti. Your life is your brand — gaya hidup sehat, kepercayaan diri, dan kesan pertama yang berkesan." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="bg-grain"></div>
-  <div class="bg-blob blob-1"></div>
-  <div class="bg-blob blob-2"></div>
+  <!-- TOP-RIGHT WORDMARK -->
+  <header class="site-header">
+    <a href="#" class="wordmark">gresyayuliati</a>
+  </header>
 
   <main>
-    <!-- HERO -->
+
+    <!-- HERO — full-bleed video that fades into the page -->
     <section class="hero">
-      <h1 class="headline reveal">
-        <span class="line">Tubuhmu adalah</span>
-        <span class="line accent">Kartu Namamu.</span>
-      </h1>
-      <p class="subtitle reveal">
-        Karena kesan pertama tidak datang dua kali —<br/>
-        dan tubuh sehatmu yang bicara lebih dulu.
-      </p>
-      <div class="hero-actions reveal">
-        <a href="#cta" class="btn btn-primary">
-          <span>Mulai Sekarang</span>
-          <span class="btn-arrow">→</span>
-        </a>
-        <a href="#story" class="btn btn-ghost">
-          <span>Pelajari Lebih Lanjut</span>
+      <div class="hero-video-wrap">
+        <video class="hero-video" src="media/hero-video.mp4" autoplay loop muted playsinline preload="metadata"></video>
+        <div class="hero-fade"></div>
+      </div>
+
+      <div class="hero-overlay">
+        <span class="hero-badge reveal">Your Life is Your Brand.</span>
+        <h1 class="hero-headline reveal">
+          Dunia menilaimu<br/>sebelum kamu berbicara.
+        </h1>
+        <a href="#cta" class="btn btn-pill-dark reveal">
+          Gabung <span class="arrow">→</span>
         </a>
       </div>
     </section>
 
-    <!-- STORY / MAIN CONTENT -->
-    <section class="story" id="story">
-      <div class="story-grid">
-        <div class="story-side reveal">
-          <p class="kicker">— Filosofi</p>
-          <h2 class="story-heading">Penampilan berbicara<br/>sebelum kata pertama.</h2>
-        </div>
-        <div class="story-body">
-          <p class="paragraph reveal">
-            Di era visual ini, penampilan dan gaya hidup sehatmu berbicara lebih keras dari kata-kata.
-            Orang menilai konsistensi, disiplin, dan karakter seseorang dari cara ia merawat tubuhnya.
-          </p>
-          <p class="paragraph reveal">
-            Kesehatan bukan hanya soal fisik — ini tentang <span class="hl">energi</span> yang kamu bawa,
-            <span class="hl">kepercayaan diri</span> yang kamu pancarkan, dan <span class="hl">kesan pertama</span> yang tak terlupakan.
-            Mereka yang konsisten menjaga kesehatan adalah mereka yang dipandang serius dalam segala hal.
-          </p>
-        </div>
+    <!-- NARRATIVE — centered editorial -->
+    <section class="narrative">
+      <h2 class="narrative-heading reveal">
+        Your Body Speaks<br/>Before You Do.
+      </h2>
+
+      <div class="prose">
+        <p class="reveal">
+          Di era yang serba visual ini, penampilan dan gaya hidupmu berbicara jauh lebih keras dari kata-kata.
+          <em>Before you even introduce yourself</em> — tubuhmu sudah menceritakan segalanya.
+          Seberapa disiplin kamu, seberapa konsisten kamu, dan seberapa dalam kamu menghargai dirimu sendiri.
+        </p>
+        <p class="reveal">
+          <em>Health is not just about your body.</em> It's about the energi yang kamu bawa ke setiap ruangan.
+          The <em>confidence</em> yang terpancar tanpa kamu harus memintanya.
+          Dan kesan pertama yang terukir dalam benak orang lain — <em>and that first impression, you never get twice.</em>
+        </p>
+        <p class="reveal">
+          Mereka yang konsisten merawat diri bukan hanya terlihat lebih baik.
+          <em>They are taken more seriously</em> — dalam bisnis, dalam relasi, dan dalam setiap peluang besar yang datang dalam hidup.
+        </p>
       </div>
     </section>
 
-    <!-- VIDEO -->
-    <section class="video-section reveal">
-      <div class="video-wrap">
-        <video src="media/hero-video.mp4" autoplay loop muted playsinline preload="metadata"></video>
-      </div>
-      <p class="video-caption">Sebuah gaya hidup. Sebuah pernyataan.</p>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta-section" id="cta">
+    <!-- DARK CTA CARD -->
+    <section class="cta-dark" id="cta">
       <div class="cta-card">
-        <p class="kicker reveal">— Mari Terhubung</p>
-        <h2 class="cta-title reveal">Bergabung dengan komunitas,<br/>atau ciptakan kolaborasi.</h2>
-        <p class="cta-sub reveal">Pilih cara terbaik untuk memulai percakapan kita.</p>
+        <h2 class="cta-headline reveal">
+          Ready to show up<br/>as your best self?
+        </h2>
+
+        <ul class="bullets reveal">
+          <li>Inspirasi gaya hidup sehat & rutinitas harian dari pengalaman pribadi</li>
+          <li>Tips menjaga konsistensi, disiplin, dan mindset yang berkelanjutan</li>
+          <li>Komunitas hangat dan suportif penuh energi positif</li>
+          <li>Konten eksklusif tentang kepercayaan diri, well-being, dan self-care</li>
+          <li>Peluang kolaborasi brand untuk kampanye yang autentik</li>
+        </ul>
 
         <div class="cta-buttons reveal">
-          <a href="https://t.me/GresyaYulianti" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
-            <span>Gabung Telegram</span>
-            <span class="btn-arrow">→</span>
+          <a href="https://t.me/GresyaYulianti" target="_blank" rel="noopener" class="btn btn-pill-light">
+            Gabung Telegram <span class="arrow">→</span>
           </a>
-          <a href="https://wa.me/6285176740137" target="_blank" rel="noopener" class="btn btn-outline btn-lg">
-            <span>Kolaborasi Bersama Saya</span>
-            <span class="btn-arrow">→</span>
+          <a href="https://wa.me/6285176740137" target="_blank" rel="noopener" class="btn btn-pill-light">
+            Kolaborasi <span class="arrow">→</span>
           </a>
         </div>
       </div>
     </section>
 
+    <!-- FOOTER -->
     <footer class="footer">
-      <p>© <span id="year"></span> Gresya Yulianti</p>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <p class="footer-wordmark">gresyayuliati</p>
+          <p class="footer-tag">Personal branding · Gaya hidup sehat</p>
+        </div>
+
+        <div class="footer-links">
+          <p>Telegram · <a href="https://t.me/GresyaYulianti" target="_blank" rel="noopener">@GresyaYulianti</a></p>
+          <p>WhatsApp · <a href="https://wa.me/6285176740137" target="_blank" rel="noopener">+62 851 7674 0137</a></p>
+        </div>
+
+        <div class="footer-meta">
+          <p>© <span id="year"></span> Gresya Yulianti</p>
+          <p>Tubuhmu adalah kartu namamu.</p>
+        </div>
+      </div>
     </footer>
+
   </main>
 
   <script src="script.js"></script>
