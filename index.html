@@ -13,17 +13,36 @@
 <body>
   <!-- NAVBAR — eyebrow text on the left, wordmark on the right -->
   <header class="site-header">
-    <span class="site-eyebrow fade-in">Your Life is Your Brand.</span>
+    <span class="site-eyebrow fade-in"><span class="eyebrow-dot">✦</span> Your Life is Your Brand.</span>
     <a href="#" class="wordmark fade-in">gresyayuliati</a>
   </header>
 
   <main>
 
-    <!-- HERO — full-width video, then headline + CTA below (no overlays on the face) -->
-    <section class="hero">
-      <div class="hero-video-wrap fade-in">
-        <video class="hero-video"
-               src="media/hero-video.mp4"
+    <!-- NARRATIVE — centered editorial; video embedded between Text 2 and Text 3 -->
+    <section class="narrative">
+      <h1 class="narrative-heading" data-words>
+        Your Body Speaks Before You Do.
+      </h1>
+
+      <div class="prose">
+        <!-- Text 1 -->
+        <p class="reveal">
+          Di era yang serba visual ini, penampilan dan gaya hidupmu berbicara jauh lebih keras dari kata-kata.
+          <em>Before you even introduce yourself</em> — tubuhmu sudah menceritakan segalanya.
+          Seberapa disiplin kamu, seberapa konsisten kamu, dan seberapa dalam kamu menghargai dirimu sendiri.
+        </p>
+        <!-- Text 2 -->
+        <p class="reveal">
+          <em>Health is not just about your body.</em> It's about the energi yang kamu bawa ke setiap ruangan.
+          The <em>confidence</em> yang terpancar tanpa kamu harus memintanya.
+          Dan kesan pertama yang terukir dalam benak orang lain — <em>and that first impression, you never get twice.</em>
+        </p>
+      </div>
+
+      <!-- VIDEO embedded between Text 2 and Text 3 -->
+      <figure class="narrative-video reveal">
+        <video src="media/hero-video.mp4"
                autoplay
                muted
                loop
@@ -32,35 +51,11 @@
                preload="auto"
                disablepictureinpicture
                disableremoteplayback></video>
-        <div class="hero-fade"></div>
-      </div>
-
-      <h1 class="hero-headline" data-words>
-        Dunia menilaimu sebelum kamu berbicara.
-      </h1>
-
-      <a href="#cta" class="btn btn-pill-dark hero-cta fade-in delay-3">
-        Gabung <span class="arrow">→</span>
-      </a>
-    </section>
-
-    <!-- NARRATIVE — centered editorial -->
-    <section class="narrative">
-      <h2 class="narrative-heading reveal">
-        Your Body Speaks<br/>Before You Do.
-      </h2>
+        <div class="narrative-video-fade"></div>
+      </figure>
 
       <div class="prose">
-        <p class="reveal">
-          Di era yang serba visual ini, penampilan dan gaya hidupmu berbicara jauh lebih keras dari kata-kata.
-          <em>Before you even introduce yourself</em> — tubuhmu sudah menceritakan segalanya.
-          Seberapa disiplin kamu, seberapa konsisten kamu, dan seberapa dalam kamu menghargai dirimu sendiri.
-        </p>
-        <p class="reveal">
-          <em>Health is not just about your body.</em> It's about the energi yang kamu bawa ke setiap ruangan.
-          The <em>confidence</em> yang terpancar tanpa kamu harus memintanya.
-          Dan kesan pertama yang terukir dalam benak orang lain — <em>and that first impression, you never get twice.</em>
-        </p>
+        <!-- Text 3 -->
         <p class="reveal">
           Mereka yang konsisten merawat diri bukan hanya terlihat lebih baik.
           <em>They are taken more seriously</em> — dalam bisnis, dalam relasi, dan dalam setiap peluang besar yang datang dalam hidup.
@@ -70,8 +65,8 @@
 
     <!-- CTA — light, no dark card, just headline + two buttons -->
     <section class="cta" id="cta">
-      <h2 class="cta-headline reveal">
-        Ready to show up<br/>as your best self?
+      <h2 class="cta-headline" data-words>
+        Ready to show up as your best self?
       </h2>
 
       <div class="cta-buttons reveal">
