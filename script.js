@@ -1,6 +1,36 @@
 // Year
 document.getElementById('year').textContent = new Date().getFullYear();
 
+// Force-start the hero video on every browser that's bashful about autoplay
+// (iOS Safari, some Android browsers in low-power mode, etc.)
+(function ensureVideoPlays() {
+  const v = document.querySelector('.hero-video');
+  if (!v) return;
+  v.muted = true;
+  v.defaultMuted = true;
+  v.setAttribute('muted', '');
+  v.setAttribute('playsinline', '');
+  const tryPlay = () => {
+    const p = v.play();
+    if (p && typeof p.catch === 'function') p.catch(() => {});
+  };
+  tryPlay();
+  v.addEventListener('canplay', tryPlay, { once: true });
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) tryPlay();
+  });
+  // One-shot user-gesture fallback for browsers that block autoplay entirely
+  const onGesture = () => { tryPlay(); cleanup(); };
+  const cleanup = () => {
+    document.removeEventListener('touchstart', onGesture);
+    document.removeEventListener('click', onGesture);
+    document.removeEventListener('scroll', onGesture);
+  };
+  document.addEventListener('touchstart', onGesture, { once: true, passive: true });
+  document.addEventListener('click', onGesture, { once: true });
+  document.addEventListener('scroll', onGesture, { once: true, passive: true });
+})();
+
 // Scroll reveal
 const io = new IntersectionObserver((entries) => {
   entries.forEach((e) => {

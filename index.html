@@ -11,31 +11,37 @@
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- TOP-RIGHT WORDMARK -->
+  <!-- NAVBAR — eyebrow text on the left, wordmark on the right -->
   <header class="site-header">
+    <span class="site-eyebrow">Your Life is Your Brand.</span>
     <a href="#" class="wordmark">gresyayuliati</a>
   </header>
 
   <main>
 
-    <!-- HERO — portrait video that fades into the page -->
+    <!-- HERO — full-width video, then headline + CTA below (no overlays on the face) -->
     <section class="hero">
-      <div class="hero-frame">
-        <div class="hero-video-wrap">
-          <video class="hero-video" src="media/hero-video.mp4" autoplay loop muted playsinline preload="metadata"></video>
-          <div class="hero-fade"></div>
-        </div>
-
-        <div class="hero-overlay">
-          <span class="hero-badge reveal">Your Life is Your Brand.</span>
-          <h1 class="hero-headline reveal">
-            Dunia menilaimu<br/>sebelum kamu berbicara.
-          </h1>
-          <a href="#cta" class="btn btn-pill-dark reveal">
-            Gabung <span class="arrow">→</span>
-          </a>
-        </div>
+      <div class="hero-video-wrap">
+        <video class="hero-video"
+               src="media/hero-video.mp4"
+               autoplay
+               muted
+               loop
+               playsinline
+               webkit-playsinline
+               preload="auto"
+               disablepictureinpicture
+               disableremoteplayback></video>
+        <div class="hero-fade"></div>
       </div>
+
+      <h1 class="hero-headline reveal">
+        Dunia menilaimu<br/>sebelum kamu berbicara.
+      </h1>
+
+      <a href="#cta" class="btn btn-pill-dark reveal hero-cta">
+        Gabung <span class="arrow">→</span>
+      </a>
     </section>
 
     <!-- NARRATIVE — centered editorial -->
@@ -62,29 +68,19 @@
       </div>
     </section>
 
-    <!-- DARK CTA CARD -->
-    <section class="cta-dark" id="cta">
-      <div class="cta-card">
-        <h2 class="cta-headline reveal">
-          Ready to show up<br/>as your best self?
-        </h2>
+    <!-- CTA — light, no dark card, just headline + two buttons -->
+    <section class="cta" id="cta">
+      <h2 class="cta-headline reveal">
+        Ready to show up<br/>as your best self?
+      </h2>
 
-        <ul class="bullets reveal">
-          <li>Inspirasi gaya hidup sehat & rutinitas harian dari pengalaman pribadi</li>
-          <li>Tips menjaga konsistensi, disiplin, dan mindset yang berkelanjutan</li>
-          <li>Komunitas hangat dan suportif penuh energi positif</li>
-          <li>Konten eksklusif tentang kepercayaan diri, well-being, dan self-care</li>
-          <li>Peluang kolaborasi brand untuk kampanye yang autentik</li>
-        </ul>
-
-        <div class="cta-buttons reveal">
-          <a href="https://t.me/GresyaYulianti" target="_blank" rel="noopener" class="btn btn-pill-light">
-            Gabung Telegram <span class="arrow">→</span>
-          </a>
-          <a href="https://wa.me/6285176740137" target="_blank" rel="noopener" class="btn btn-pill-light">
-            Kolaborasi <span class="arrow">→</span>
-          </a>
-        </div>
+      <div class="cta-buttons reveal">
+        <a href="https://t.me/GresyaYulianti" target="_blank" rel="noopener" class="btn btn-pill-dark">
+          Gabung Telegram <span class="arrow">→</span>
+        </a>
+        <a href="https://wa.me/6285176740137" target="_blank" rel="noopener" class="btn btn-pill-outline">
+          Kolaborasi <span class="arrow">→</span>
+        </a>
       </div>
     </section>
 
