@@ -1,6 +1,24 @@
 // Year
 document.getElementById('year').textContent = new Date().getFullYear();
 
+// Word-by-word stagger reveal for any element marked [data-words]
+(function staggerWords() {
+  document.querySelectorAll('[data-words]').forEach((el) => {
+    const text = el.textContent.trim();
+    const words = text.split(/\s+/);
+    el.textContent = '';
+    words.forEach((w, i) => {
+      const span = document.createElement('span');
+      span.className = 'word';
+      span.textContent = w;
+      span.style.animationDelay = (0.35 + i * 0.09) + 's';
+      el.appendChild(span);
+      if (i < words.length - 1) el.appendChild(document.createTextNode(' '));
+    });
+    el.classList.add('words-ready');
+  });
+})();
+
 // Force-start the hero video on every browser that's bashful about autoplay
 // (iOS Safari, some Android browsers in low-power mode, etc.)
 (function ensureVideoPlays() {
